@@ -4,12 +4,40 @@ $default-teal: #36a6a9;
 $default-peach: #e3ac94;
 $default-navy: #061d5a;
 $default-white: #ffffff;
-
+$default-black: #000000;
 
 @import 'button';
 @import 'slider';
+@import 'nav';
 
-// include sass library bourbon
+body {
+	background: $default-black;
+}
+
+header {
+	position: fixed;
+	background-color: $default-teal;
+	width: 100%;
+	z-index: 1;
+}
+
+#home {
+	position: relative;
+}
+
+#contact {
+	position: relative;
+
+}
+
+.profile_photo {
+	border: 2px solid white;
+	width: 50%;
+	float: left;
+	img {
+		width: 100%;
+	}
+}
 
 
 // @for $i from 1 through 100 {     

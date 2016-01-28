@@ -27,12 +27,12 @@
 
 .container {
   max-width: 100%;
-  background-color: black;
+  background-color: #000000;
   margin: 0 auto;
   text-align: center;
   position: relative; }
   .container div {
-    background-color: white;
+    background-color: #000000;
     width: 100%;
     display: inline-block;
     display: none; }
@@ -40,5 +40,72 @@
     width: 100%;
     height: auto;
     opacity: 0.8; }
+
+nav li {
+  display: inline-block;
+  position: relative; }
+  nav li a {
+    color: black;
+    display: block;
+    padding: 10px 14px;
+    text-decoration: none; }
+    nav li a:hover {
+      background: #29a7f5;
+      color: white; }
+nav ul {
+  list-style: none;
+  top: 100%;
+  background: white;
+  padding: 10px 0; }
+  nav ul li a {
+    color: black;
+    display: block;
+    padding: 8px 20px;
+    text-decoration: none; }
+  nav ul li:hover {
+    background: #29a7f5;
+    color: white; }
+nav.is-selected a {
+  background: #29a7f5;
+  color: white; }
+nav.is-selected ul {
+  display: block; }
+
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+body {
+  background: #000000; }
+
+header {
+  position: fixed;
+  background-color: #36a6a9;
+  width: 100%;
+  z-index: 1; }
+
+#home {
+  position: relative; }
+
+#contact {
+  position: relative; }
+
+.profile_photo {
+  border: 2px solid white;
+  width: 50%;
+  float: left; }
+  .profile_photo img {
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

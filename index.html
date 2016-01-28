@@ -29,35 +29,27 @@ At bare minimum, an HTML page should exist with all of the different elements yo
         <link href="stylesheets/css/main.css" rel="stylesheet">
 	</head>
 	<body>
-    <section id="nav">
-    	<nav id="">
-    		<div class="collapse navbar-collapse" id="main-nav-collapse">
-                fixed nav bar
-        drop down nav menu
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home" itemprop="url">
-                        <span itemprop="name">Home</span>
-                    </a></li>
-
-                    <li><a href="#gallery" itemprop="url">
-                        <span itemprop="name">Gallery</span>
-                    </a></li>
-
-                    <li><a href="#contact" itemprop="url">
-                        <span itemprop="name">Contact</span>
-                    </a></li>
-
-                   <!--  <li><a href="#blog" itemprop="url">
-                        <span itemprop="name">Blog</span>
-                    </a></li> -->
-
-                    <li><a href="#connect" itemprop="url">
-                        <span itemprop="name">Connect</span>
-                    </a></li>
-                </ul>
-            </div>
-        </nav>
-    </section>
+    <header>
+        <!-- <a class="mobile" href="#">&#9776;</a> -->
+            <nav>
+                  <ul id="menubar">
+                    <li class="dropdown"><a href="#layouts">Layouts</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#features">Features</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#form">Form</a></li>
+                            <li><a href="#button">Buttons</a></li>
+                        </ul>
+                    </li>
+                  </ul>
+                <div style="clear:both;"></div>
+            </nav>
+    </header>
     <section id="home">
         <section class="slider">
           <button class="btn btn-primary next" type="button">Next</button>
@@ -78,6 +70,9 @@ At bare minimum, an HTML page should exist with all of the different elements yo
     <section id="gallery">
     </section>
     <section id="contact">
+        <div class="profile_photo">
+            <img src="images/erin.png">
+        </div>
         <h2>Contact Form</h2>
         <form action="MAILTO:erin.mahon14@gmail.com" method="post" enctype="text/plain">
             <input type="text" name="fname" value="First Name"><br>
@@ -88,13 +83,24 @@ At bare minimum, an HTML page should exist with all of the different elements yo
             <input type="reset" value="Reset">
         </form>
     </section>
-    <section id="button">
-        <button id="play" class="btn btn-primary" type="button">Play</button>
-        <button id="pause" class="btn btn-primary" type="button">Pause</button>
-        <button id="stop" class="btn btn-primary" type="button">Stop</button>
-        <button id="last" class="btn btn-primary" type="button">Last</button>
-        <button id="next" class="btn btn-primary" type="button">Next</button>
-    </section>
+    <section id="features">
+        <section id="button">
+            <button id="play" class="btn btn-primary" type="button">Play</button>
+            <button id="pause" class="btn btn-primary" type="button">Pause</button>
+            <button id="stop" class="btn btn-primary" type="button">Stop</button>
+            <button id="last" class="btn btn-primary" type="button">Last</button>
+            <button id="next" class="btn btn-primary" type="button">Next</button>
+        </section>
+        <section id="form">
+             <form action="MAILTO:erin.mahon14@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="fname" value="First Name"><br>
+                <input type="text" name="lname" value="Last Name"><br>
+                <input type="text" name="mail" value="Email" placeholder="Email"><br>
+                <input type="text" name="comment" value="Comment" size="50"><br><br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </form>
+        </section
 	<footer>
         footer with social media links
     </footer>

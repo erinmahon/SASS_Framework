@@ -4,15 +4,16 @@ $default-teal: #36a6a9;
 $default-peach: #e3ac94;
 $default-navy: #061d5a;
 $default-white: #ffffff;
+$default-black: #000000;
 
 .container {
   max-width: 100%;
-  background-color: $default-navy;
+  background-color: $default-black;
   margin: 0 auto;
   text-align: center;
   position: relative;
   div {
-  background-color: $default-white;
+  background-color: $default-black;
   width: 100%;
   display: inline-block;
   display: none;
