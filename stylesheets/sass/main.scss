@@ -6,38 +6,79 @@ $default-navy: #061d5a;
 $default-white: #ffffff;
 $default-black: #000000;
 
+
 @import 'button';
 @import 'slider';
 @import 'nav';
+@import 'grid';
+@import 'gallery';
+@import 'form';
 
-body {
-	background: $default-black;
-}
+// body {
+// 	background: $default-black;
+// }
 
 header {
 	position: fixed;
 	background-color: $default-teal;
 	width: 100%;
+	margin: 0 auto;
 	z-index: 1;
+}
+
+h3 {
+	font: 200% $font-stack;
+	margin-top: 0;
 }
 
 #home {
 	position: relative;
 }
 
-#contact {
-	position: relative;
-
+#portfolio {
+	padding-top: 100px;
 }
 
-.profile_photo {
+#contact {
+	position: relative;
+	padding-top: 100px;
+	.profile_photo {
 	border: 2px solid white;
 	width: 50%;
 	float: left;
-	img {
-		width: 100%;
+		img {
+			width: 100%;
+		}	
+	}
+	.about {
+		float: left;
+		border: 2px solid black;
+		width: 50%;
+		padding: 2%;
+		background-color: $default-peach;
+		h2 {
+
+		}
+		p {
+			font: 100% $font-stack;
+			font-weight: lighter;
+		}
+	}
+	.form {
+		clear: both;
 	}
 }
+
+footer {
+	clear: both;
+	height: 100px;
+	width: 100%;
+	background-color: $default-teal;
+}
+
+
+
+
 
 
 // @for $i from 1 through 100 {     

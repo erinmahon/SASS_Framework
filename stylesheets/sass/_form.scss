@@ -1,0 +1,12 @@
+$font-stack: Helvetica, sans-serif;
+
+form {
+	input {
+		text-transform: uppercase;
+		letter-spacing: .15em;
+		font: 80% $font-stack;
+		margin-top: 2%;
+		padding: 1%;
+		display: inline-block;
+	}
+}

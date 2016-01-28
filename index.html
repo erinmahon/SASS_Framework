@@ -32,28 +32,28 @@ At bare minimum, an HTML page should exist with all of the different elements yo
     <header>
         <!-- <a class="mobile" href="#">&#9776;</a> -->
             <nav>
-                  <ul id="menubar">
-                    <li class="dropdown"><a href="#layouts">Layouts</a>
-                        <ul class="dropdown-content">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#gallery">Gallery</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#features">Features</a>
-                        <ul class="dropdown-content">
-                            <li><a href="#form">Form</a></li>
-                            <li><a href="#button">Buttons</a></li>
-                        </ul>
-                    </li>
-                  </ul>
-                <div style="clear:both;"></div>
+              <ul id="menubar">
+                <li class="dropdown"><a href="#layouts">Layouts</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#features">Features</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#slider">Image Slider</a></li>
+                        <li><a href="#portfolio">Image Gallery</a></li>
+                        <li><a href="#form">Form</a></li>
+                        <li><a href="#button">Buttons</a></li>
+                    </ul>
+                </li>
+              </ul>
+              <div style="clear:both;"></div>
             </nav>
     </header>
     <section id="home">
-        <section class="slider">
-          <button class="btn btn-primary next" type="button">Next</button>
-          <button class="btn btn-primary prev" type="button">Previous</button>
+        <section id="slider" class="slider">
           <div class="container">
             <div style="display: inline-block;">
               <img src="images/addison.jpg"/>
@@ -65,42 +65,64 @@ At bare minimum, an HTML page should exist with all of the different elements yo
               <img src="images/rian.jpg"/>
             </div>
           </div>
+          <!-- <button class="btn btn-primary next" type="button">Next</button>
+          <button class="btn btn-primary prev" type="button">Previous</button> -->
         </section>
     </section>
-    <section id="gallery">
+    <section id="portfolio" class="gallery">
+        <div class="gallery_image">
+            <img src="images/addy.jpg">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
+        </div>
+        <div class="gallery_image">
+            <img src="images/fam_color.jpg">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
+        </div>
+        <div class="gallery_image">
+            <img src="images/sally.jpg">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
+        </div>
+        <div class="gallery_image">
+            <img src="images/tara.jpg">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
+        </div>
+        <div class="gallery_image">
+            <img src="images/michael.jpg">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
+        </div>
+        <div class="gallery_image">
+            <img src="images/juice.jpg">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
+        </div>
     </section>
     <section id="contact">
         <div class="profile_photo">
             <img src="images/erin.png">
         </div>
-        <h2>Contact Form</h2>
-        <form action="MAILTO:erin.mahon14@gmail.com" method="post" enctype="text/plain">
-            <input type="text" name="fname" value="First Name"><br>
-            <input type="text" name="lname" value="Last Name"><br>
-            <input type="text" name="mail" value="Email" placeholder="Email"><br>
-            <input type="text" name="comment" value="Comment" size="50"><br><br>
-            <input type="submit" value="Send">
-            <input type="reset" value="Reset">
-        </form>
-    </section>
-    <section id="features">
-        <section id="button">
-            <button id="play" class="btn btn-primary" type="button">Play</button>
-            <button id="pause" class="btn btn-primary" type="button">Pause</button>
-            <button id="stop" class="btn btn-primary" type="button">Stop</button>
-            <button id="last" class="btn btn-primary" type="button">Last</button>
-            <button id="next" class="btn btn-primary" type="button">Next</button>
-        </section>
-        <section id="form">
-             <form action="MAILTO:erin.mahon14@gmail.com" method="post" enctype="text/plain">
+        <div class="about">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum repellendus atque inventore, totam exercitationem, rerum at alias odit velit quibusdam laudantium praesentium quo perspiciatis. Eveniet suscipit eaque vero, eligendi laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellendus velit, dolores et sequi maxime vitae dolor beatae facere eveniet quaerat blanditiis voluptatem excepturi, consequuntur omnis dolore sit, odit quae?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur a, iure nulla, assumenda aliquid tempore vitae consequatur iste facilis quam ratione perspiciatis quaerat repellat explicabo voluptate. Dolores magnam ab rem!</p>
+        </div>
+        <div id="form" class="form">
+            <h2>Contact</h2>
+            <form action="MAILTO:erin.mahon14@gmail.com" method="post" enctype="text/plain">
                 <input type="text" name="fname" value="First Name"><br>
                 <input type="text" name="lname" value="Last Name"><br>
                 <input type="text" name="mail" value="Email" placeholder="Email"><br>
                 <input type="text" name="comment" value="Comment" size="50"><br><br>
-                <input type="submit" value="Send">
-                <input type="reset" value="Reset">
+                <button class="btn btn-primary next" type="submit">Send</button>
+                <button class="btn btn-primary next" type="reset">Reset</button>
             </form>
-        </section
+        </div>
+    </section>
 	<footer>
         footer with social media links
     </footer>
