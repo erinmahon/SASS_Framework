@@ -1,0 +1,42 @@
+// syling of buttons for interactive experience
+
+$default-tan: #d6d5ba;
+$default-blue: #628792;
+$default-teal: #36a6a9;
+$default-peach: #e3ac94;
+$default-navy: #061d5a;
+$default-white: #ffffff;
+
+.btn {
+    padding: 4px;
+    border: 2px solid $default-tan;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 3px;
+    height: 30px;
+    // width: 20%;
+    font-size: 0.75em;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline-color: $default-navy;
+}
+ 
+.btn-primary {
+    background: $default-blue;
+    color: $default-white;
+}
+
+.btn-primary:focus {
+    background: $default-navy;
+}
+ 
+.btn-primary:hover {
+    background: $default-teal;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: $default-navy;
+    box-shadow: none;
+}

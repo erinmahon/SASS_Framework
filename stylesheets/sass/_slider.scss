@@ -1,0 +1,25 @@
+$default-tan: #d6d5ba;
+$default-blue: #628792;
+$default-teal: #36a6a9;
+$default-peach: #e3ac94;
+$default-navy: #061d5a;
+$default-white: #ffffff;
+
+.container {
+  max-width: 100%;
+  background-color: $default-navy;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  div {
+  background-color: $default-white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+  }
+  img {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+  }
+}

@@ -1,0 +1,104 @@
+<!-- SASS Front End Framework
+
+Create a Bootstrap-like toolkit in SASS that covers 
+some basic HTML element use cases like headers ( <h1> ), forms
+( <input ), etc. 
+Use the powerful features of SASS, 
+like dividing elements into partials and variable names, 
+to make your life and the end users' life easier.
+
+Focus on the easy things first:
+picking a font
+buttons
+good looking forms
+good looking dropdown menus. 
+Then see what you have time left to tackle
+
+The final product should be a portfolio piece - an embeddable piece of SASS that comes with all the necessary elements to build a website, styled in a theme of your design
+
+Don't crib existing code - write your own CSS code. Try and only lookup attributes you may be confused about rather than copying boilerplate code for different elements wholesale
+
+At bare minimum, an HTML page should exist with all of the different elements you've designed, a showcase of these elements and what classes to call to use them -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>SASS Framwork</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="stylesheets/css/main.css" rel="stylesheet">
+	</head>
+	<body>
+    <section id="nav">
+    	<nav id="">
+    		<div class="collapse navbar-collapse" id="main-nav-collapse">
+                fixed nav bar
+        drop down nav menu
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home" itemprop="url">
+                        <span itemprop="name">Home</span>
+                    </a></li>
+
+                    <li><a href="#gallery" itemprop="url">
+                        <span itemprop="name">Gallery</span>
+                    </a></li>
+
+                    <li><a href="#contact" itemprop="url">
+                        <span itemprop="name">Contact</span>
+                    </a></li>
+
+                   <!--  <li><a href="#blog" itemprop="url">
+                        <span itemprop="name">Blog</span>
+                    </a></li> -->
+
+                    <li><a href="#connect" itemprop="url">
+                        <span itemprop="name">Connect</span>
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section id="home">
+        <section class="slider">
+          <button class="btn btn-primary next" type="button">Next</button>
+          <button class="btn btn-primary prev" type="button">Previous</button>
+          <div class="container">
+            <div style="display: inline-block;">
+              <img src="images/addison.jpg"/>
+            </div>
+            <div>
+             <img src="images/emma.jpg"/>
+            </div>
+            <div>
+              <img src="images/rian.jpg"/>
+            </div>
+          </div>
+        </section>
+    </section>
+    <section id="gallery">
+    </section>
+    <section id="contact">
+        <h2>Contact Form</h2>
+        <form action="MAILTO:erin.mahon14@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="fname" value="First Name"><br>
+            <input type="text" name="lname" value="Last Name"><br>
+            <input type="text" name="mail" value="Email" placeholder="Email"><br>
+            <input type="text" name="comment" value="Comment" size="50"><br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
+    <section id="button">
+        <button id="play" class="btn btn-primary" type="button">Play</button>
+        <button id="pause" class="btn btn-primary" type="button">Pause</button>
+        <button id="stop" class="btn btn-primary" type="button">Stop</button>
+        <button id="last" class="btn btn-primary" type="button">Last</button>
+        <button id="next" class="btn btn-primary" type="button">Next</button>
+    </section>
+	<footer>
+        footer with social media links
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>  	
+	</body>
+</html>

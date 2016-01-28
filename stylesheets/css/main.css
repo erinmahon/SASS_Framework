@@ -1,0 +1,44 @@
+.btn {
+  padding: 4px;
+  border: 2px solid #d6d5ba;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 3px;
+  height: 30px;
+  font-size: 0.75em; }
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline-color: #061d5a; }
+
+.btn-primary {
+  background: #628792;
+  color: #ffffff; }
+
+.btn-primary:focus {
+  background: #061d5a; }
+
+.btn-primary:hover {
+  background: #36a6a9; }
+
+.btn-primary:active, .btn-primary.active {
+  background: #061d5a;
+  box-shadow: none; }
+
+.container {
+  max-width: 100%;
+  background-color: black;
+  margin: 0 auto;
+  text-align: center;
+  position: relative; }
+  .container div {
+    background-color: white;
+    width: 100%;
+    display: inline-block;
+    display: none; }
+  .container img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8; }
+
+/*# sourceMappingURL=main.css.map */

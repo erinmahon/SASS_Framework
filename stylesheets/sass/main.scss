@@ -1,0 +1,28 @@
+$default-tan: #d6d5ba;
+$default-blue: #628792;
+$default-teal: #36a6a9;
+$default-peach: #e3ac94;
+$default-navy: #061d5a;
+$default-white: #ffffff;
+
+
+@import 'button';
+@import 'slider';
+
+// include sass library bourbon
+
+
+// @for $i from 1 through 100 {     
+	//.cell-#{$i} { width: 1% * $i; }   
+//}
+
+
+//%thick-line {   
+	//border: 10px solid black; 
+//}
+
+//.profile {  
+ //@extend %thick-line; 
+//}
+// Set varibales for theme colors
+

@@ -1,0 +1,87 @@
+// create element into row
+// You'll notice that I set the font-size to zero for the row mixin and then back to 16px 
+// for the column mixin. This is little hack to kill the default margin of inline-block elements. 
+// (Inline-block elements appear in the normal text flow of the document, left-to-right, 
+// 	but unlike block elements that are floated, they still need to deal with the text nodes 
+// 	on either side which create unwanted margin. 
+// This hack of setting the font-size to zero makes the space disappear.)
+@mixin row() {
+  font-size: 0;
+}
+
+// create column mixin for grid cells
+// The column mixin also contains a handy parameter that 
+// will allow you to set the vertical alignment of a cell. 
+// This is extremely handy for aligning the cells in a row.
+
+@mixin col($align: top) {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: $align;
+}
+
+// extend the column mixin to include a way of setting the width of the column
+// This will allow us to set the width of a cell to 1/3 with @include col(1,3)
+@mixin col($col, $sum, $align: top) {
+  width: percentage($col/$sum);
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: $align;
+}
+
+@mixin col($col, $sum, $gap: 1em, $align: top) {
+  width: percentage($col/$sum);
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: $align;
+  box-sizing: border-box;
+  padding: 0 $gap;
+}
+
+// extend this further to so that we can specify the gap between cells
+// We can now specify the $gap between cells by passing it as a parameter to the column mixin: 
+// @include col(1, 2, $gap: 2em) (the default $gap is 1em), 
+// however it won't work well for the first and last columns because they will get 
+// $gap padding applied before and after which isn't quite what we want.
+@mixin col($col, $sum, $gap: 1em, $align: top) {
+  width: percentage($col/$sum);
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: $align;
+  box-sizing: border-box;
+  padding: 0 $gap;
+}
+
+// accommodate the first and last columns we can add two additional parameters
+// Now we can call @include col(1, 3, $first: true) for the first cell, 
+// or @include col(1, 3, $last: true) for the final cell and it will work correctly.
+
+@mixin col($col, $sum, $gap: 1em, $align: top, $first: false, $last: false) {
+  width: percentage($col/$sum);
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: $align;
+  box-sizing: border-box;
+  padding-left: if($first, 0, $gap);
+  padding-right: if($last, 0, $gap);
+}
+
+// make the column mixin responsive
+// Now, on screens less than 768 pixels wide (mobile devices) elements that use the column mixin
+// will be as wide as their parent element, however on screens greater than 768 pixels wide
+//  (like desktop computers) cells will display at their appropriate widths.
+
+
+@mixin col($col, $sum, $gap: 1em, $align: top) {
+  width: 100%;
+  font-size: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: if($first, 0, $gap);
+  padding-right: if($last, 0, $gap);
+
+  @media only screen and (min-width: 768px) {
+    width: percentage($col/$sum);
+    vertical-align: $align;
+  }
+}
