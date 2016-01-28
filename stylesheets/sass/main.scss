@@ -6,6 +6,7 @@ $default-navy: #061d5a;
 $default-white: #ffffff;
 $default-black: #000000;
 
+$font-stack: Helvetica, sans-serif;
 
 @import 'button';
 @import 'slider';
@@ -29,6 +30,7 @@ header {
 h3 {
 	font: 200% $font-stack;
 	margin-top: 0;
+	text-transform: uppercase;
 }
 
 #home {
@@ -43,30 +45,32 @@ h3 {
 	position: relative;
 	padding-top: 100px;
 	.profile_photo {
-	border: 2px solid white;
-	width: 50%;
-	float: left;
-		img {
-			width: 100%;
-		}	
-	}
+		@include col(1, 2);
+		border: 2px solid white;
+		// width: 50%;
+		float: left;
+			img {
+				width: 100%;
+			}	
+		}
 	.about {
+		@include col(1, 2);
 		float: left;
 		border: 2px solid black;
-		width: 50%;
+		// width: 30%;
 		padding: 2%;
 		background-color: $default-peach;
-		h2 {
+		h3 {
 
 		}
 		p {
-			font: 100% $font-stack;
+			font: 90% $font-stack;
 			font-weight: lighter;
 		}
 	}
-	.form {
-		clear: both;
-	}
+}
+.form {
+	clear: both;
 }
 
 footer {
@@ -75,23 +79,3 @@ footer {
 	width: 100%;
 	background-color: $default-teal;
 }
-
-
-
-
-
-
-// @for $i from 1 through 100 {     
-	//.cell-#{$i} { width: 1% * $i; }   
-//}
-
-
-//%thick-line {   
-	//border: 10px solid black; 
-//}
-
-//.profile {  
- //@extend %thick-line; 
-//}
-// Set varibales for theme colors
-

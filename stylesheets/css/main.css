@@ -125,53 +125,6 @@ nav {
       font: 85% Helvetica, sans-serif;
       font-weight: lighter; }
 
-h2 {
-  margin-top: 0; }
-
-.features, .products, .compare {
-  font-size: 0;
-  margin-bottom: 50px; }
-
-.features article {
-  width: 100%;
-  display: inline-block;
-  font-size: 16px;
-  padding-left: 1em;
-  padding-right: 1em; }
-  @media only screen and (min-width: 768px) {
-    .features article {
-      width: 33.33333%;
-      vertical-align: top; } }
-  .features article.fluid {
-    width: 33.33333%; }
-
-.products article {
-  background: #eee;
-  width: 100%;
-  display: inline-block;
-  font-size: 16px;
-  padding-left: 1em;
-  padding-right: 1em; }
-  @media only screen and (min-width: 768px) {
-    .products article {
-      width: 33.33333%;
-      vertical-align: middle; } }
-  .products article.fluid {
-    width: 33.33333%; }
-
-.about, .profile_photo {
-  width: 100%;
-  display: inline-block;
-  font-size: 16px;
-  padding-left: 1em;
-  padding-right: 1em; }
-  @media only screen and (min-width: 768px) {
-    .about, .profile_photo {
-      width: 50%;
-      vertical-align: top; } }
-  .about.fluid, .profile_photo.fluid {
-    width: 50%; }
-
 form input {
   text-transform: uppercase;
   letter-spacing: .15em;
@@ -189,7 +142,8 @@ header {
 
 h3 {
   font: 200% Helvetica, sans-serif;
-  margin-top: 0; }
+  margin-top: 0;
+  text-transform: uppercase; }
 
 #home {
   position: relative; }
@@ -201,22 +155,43 @@ h3 {
   position: relative;
   padding-top: 100px; }
   #contact .profile_photo {
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 1em;
+    padding-right: 1em;
     border: 2px solid white;
-    width: 50%;
     float: left; }
+    @media only screen and (min-width: 768px) {
+      #contact .profile_photo {
+        width: 50%;
+        vertical-align: top; } }
+    #contact .profile_photo.fluid {
+      width: 50%; }
     #contact .profile_photo img {
       width: 100%; }
   #contact .about {
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 1em;
+    padding-right: 1em;
     float: left;
     border: 2px solid black;
-    width: 50%;
     padding: 2%;
     background-color: #e3ac94; }
+    @media only screen and (min-width: 768px) {
+      #contact .about {
+        width: 50%;
+        vertical-align: top; } }
+    #contact .about.fluid {
+      width: 50%; }
     #contact .about p {
-      font: 100% Helvetica, sans-serif;
+      font: 90% Helvetica, sans-serif;
       font-weight: lighter; }
-  #contact .form {
-    clear: both; }
+
+.form {
+  clear: both; }
 
 footer {
   clear: both;
