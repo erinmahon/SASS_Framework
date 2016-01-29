@@ -134,6 +134,8 @@ nav {
       font: 85% Helvetica, sans-serif;
       font-weight: lighter;
       margin-top: 0%; }
+    .gallery .gallery_image :hover {
+      opacity: 0.7; }
 
 form input {
   text-transform: uppercase;
