@@ -1,8 +1,8 @@
 # SASS_Framework
-<h3>Fully Responsive, Custom Front End Framework</h3>
+<h3>Fully Responsive, Custom Built Front End Framework</h3>
 <hr>
 
-Built using SASS features including variables, mixins, nesting, and dividing elements into partial views.
+Built using SASS features including variables, mixins, inheritance, nesting, and dividing elements into partial views.
 
 <h4>Main features include:</h4>
 <ul>
@@ -21,7 +21,3 @@ Built using SASS features including variables, mixins, nesting, and dividing ele
 	<li>Contact section</li>
 	<li>Footer</li>	
 </ul>
-
-Fully responsive design accomplished through a custom grid built in SASS.
-
-
