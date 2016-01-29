@@ -1,8 +1,8 @@
 # SASS_Framework
 
-Fully Responsive, Custom Built Front End Framework built using SASS.
+<h3>Fully Responsive, Custom Front End Framework</h3>
 
-Incorporates SASS features including variables, mixins, nesting, and dividing elements into partial views.
+Built using SASS features including variables, mixins, nesting, and dividing elements into partial views.
 
 Main features include:
 1. An dropdown navigation menu
@@ -18,6 +18,6 @@ Main layout features include:
 4. Contact section
 5. Footer
 
-Full responsive design accomplished through a custom grid built in SASS.
+Fully responsive design accomplished through a custom grid built in SASS.
 
 
