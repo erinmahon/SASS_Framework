@@ -36,7 +36,6 @@ $font-stack: Helvetica, sans-serif;
 
 .gallery {
 	 @include row;
-	 margin-top: 100px;
 	 .gallery_image {
 	 		opacity: 0.9;
 	 	@include col(1,3);
@@ -44,13 +43,14 @@ $font-stack: Helvetica, sans-serif;
 	 		width: 100%;
 	 		border: 2px solid $default-black;
 	 	}
-	 	h3 {
-	 		font: 200% $font-stack;
-	 		margin-top: 0;
-	 	}
+	 	// h3 {
+	 	// 	font: 200% $font-stack;
+	 	// 	margin-top: 0;
+	 	// }
 	 	p {
 	 		font: 85% $font-stack;
 	 		font-weight: lighter;
+	 		margin-top: 0%;
 	 	}
 	 }
 }

@@ -41,6 +41,25 @@
     height: auto;
     opacity: 0.8; }
 
+@media only screen and (max-width: 768px) {
+  .slider {
+    padding-top: 10%; } }
+@media only screen and (max-width: 550px) {
+  .slider {
+    padding-top: 15%; } }
+@media only screen and (max-width: 500px) {
+  .slider {
+    padding-top: 16%; } }
+@media only screen and (max-width: 450px) {
+  .slider {
+    padding-top: 18%; } }
+@media only screen and (max-width: 400px) {
+  .slider {
+    padding-top: 20%; } }
+@media only screen and (max-width: 350px) {
+  .slider {
+    padding-top: 25%; } }
+
 nav {
   text-transform: uppercase;
   font: 90% Helvetica, sans-serif; }
@@ -58,7 +77,7 @@ nav {
   nav ul {
     list-style: none;
     top: 100%;
-    background: #ffffff;
+    background: #061d5a;
     padding: 10px 0; }
     nav ul li a {
       color: #e3ac94;
@@ -100,8 +119,7 @@ nav {
   box-sizing: border-box; }
 
 .gallery {
-  font-size: 0;
-  margin-top: 100px; }
+  font-size: 0; }
   .gallery .gallery_image {
     opacity: 0.9;
     width: 100%;
@@ -118,12 +136,10 @@ nav {
     .gallery .gallery_image img {
       width: 100%;
       border: 2px solid #000000; }
-    .gallery .gallery_image h3 {
-      font: 200% Helvetica, sans-serif;
-      margin-top: 0; }
     .gallery .gallery_image p {
       font: 85% Helvetica, sans-serif;
-      font-weight: lighter; }
+      font-weight: lighter;
+      margin-top: 0%; }
 
 form input {
   text-transform: uppercase;
@@ -133,6 +149,10 @@ form input {
   padding: 1%;
   display: inline-block; }
 
+body {
+  background: #ffffff;
+  opacity: 0.9; }
+
 header {
   position: fixed;
   background-color: #36a6a9;
@@ -140,27 +160,39 @@ header {
   margin: 0 auto;
   z-index: 1; }
 
-h3 {
+h3, h4, h1 {
   font: 200% Helvetica, sans-serif;
-  margin-top: 0;
-  text-transform: uppercase; }
+  margin-top: 1%;
+  text-transform: uppercase;
+  text-align: center; }
+
+h4 {
+  font: 150% Helvetica, sans-serif;
+  margin-bottom: 1%; }
+
+h1 {
+  font-size: 250% Helvetica, sans-serif;
+  color: #ffffff;
+  background-color: #36a6a9;
+  border: 4px solid #628792;
+  width: 100%;
+  padding: 1%; }
 
 #home {
   position: relative; }
 
 #portfolio {
-  padding-top: 100px; }
+  padding-top: 10%; }
 
 #contact {
-  position: relative;
-  padding-top: 100px; }
+  padding-top: 7%; }
   #contact .profile_photo {
+    margin-bottom: 1%;
     width: 100%;
     display: inline-block;
     font-size: 16px;
     padding-left: 1em;
     padding-right: 1em;
-    border: 2px solid white;
     float: left; }
     @media only screen and (min-width: 768px) {
       #contact .profile_photo {
@@ -177,9 +209,7 @@ h3 {
     padding-left: 1em;
     padding-right: 1em;
     float: left;
-    border: 2px solid black;
-    padding: 2%;
-    background-color: #e3ac94; }
+    padding: 2%; }
     @media only screen and (min-width: 768px) {
       #contact .about {
         width: 50%;
@@ -191,7 +221,16 @@ h3 {
       font-weight: lighter; }
 
 .form {
-  clear: both; }
+  text-align: center;
+  clear: both;
+  background-color: #e3ac94;
+  padding: 1%; }
+
+.social_links {
+  list-style-type: none; }
+  .social_links li {
+    display: inline-block;
+    margin: 1%; }
 
 footer {
   clear: both;

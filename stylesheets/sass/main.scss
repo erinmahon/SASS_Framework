@@ -15,9 +15,10 @@ $font-stack: Helvetica, sans-serif;
 @import 'gallery';
 @import 'form';
 
-// body {
-// 	background: $default-black;
-// }
+body {
+	background: $default-white;
+	opacity: 0.9;
+}
 
 header {
 	position: fixed;
@@ -29,8 +30,23 @@ header {
 
 h3 {
 	font: 200% $font-stack;
-	margin-top: 0;
+	margin-top: 1%;
 	text-transform: uppercase;
+	text-align: center;
+}
+h4 {
+	@extend h3;
+	font: 150% $font-stack;
+	margin-bottom: 1%;
+}
+h1 {
+	@extend h3;
+	font-size: 250% $font-stack;
+	color: $default-white;
+	background-color: $default-teal;
+	border: 4px solid $default-blue;
+	width: 100%;
+	padding: 1%;
 }
 
 #home {
@@ -38,16 +54,15 @@ h3 {
 }
 
 #portfolio {
-	padding-top: 100px;
+	padding-top: 10%;
 }
 
 #contact {
-	position: relative;
-	padding-top: 100px;
+	padding-top: 7%;
 	.profile_photo {
+		margin-bottom: 1%;
 		@include col(1, 2);
-		border: 2px solid white;
-		// width: 50%;
+		// border: 2px solid $default-black;
 		float: left;
 			img {
 				width: 100%;
@@ -56,13 +71,8 @@ h3 {
 	.about {
 		@include col(1, 2);
 		float: left;
-		border: 2px solid black;
-		// width: 30%;
 		padding: 2%;
-		background-color: $default-peach;
-		h3 {
-
-		}
+		// background-color: $default-blue;
 		p {
 			font: 90% $font-stack;
 			font-weight: lighter;
@@ -70,7 +80,18 @@ h3 {
 	}
 }
 .form {
+	text-align: center;
 	clear: both;
+	background-color: $default-peach;
+	padding: 1%;
+}
+
+.social_links {
+	list-style-type: none;
+	li {
+		display: inline-block;
+		margin: 1%;
+	}
 }
 
 footer {
