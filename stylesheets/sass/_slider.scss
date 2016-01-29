@@ -1,3 +1,4 @@
+// COLOR PALLETE VARIBALES
 $default-tan: #d6d5ba;
 $default-blue: #628792;
 $default-teal: #36a6a9;
@@ -6,6 +7,7 @@ $default-navy: #061d5a;
 $default-white: #ffffff;
 $default-black: #000000;
 
+// SLIDER SYTLING (NESTED)
 .container {
   max-width: 100%;
   background-color: $default-black;
@@ -25,6 +27,7 @@ $default-black: #000000;
   }
 }
 
+// MEDIA QUERY DEFINING SLIDER MARGIN-TOP @ PROGRESSIVE BREAK POINTS
 .slider {
   @media only screen and (max-width: 768px) {
     padding-top: 10%;

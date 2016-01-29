@@ -1,3 +1,4 @@
+// COLOR PALLETE VARIBALES
 $default-tan: #d6d5ba;
 $default-blue: #628792;
 $default-teal: #36a6a9;
@@ -6,8 +7,10 @@ $default-navy: #061d5a;
 $default-white: #ffffff;
 $default-black: #000000;
 
+// FONT VARIABLE
 $font-stack: Helvetica, sans-serif;
 
+// NESTED NAV STYLING
 nav {
 	text-transform: uppercase;
 	font: 90% $font-stack;
@@ -35,16 +38,24 @@ nav {
         		padding: 8px 20px;
         		text-decoration: none;
 			}
-        	&:hover { background: $default-blue; color: $default-white; }
-      }
+        	&:hover { 
+        		background: $default-blue; 
+        		color: $default-white; 
+        	}
+        }
     }
-
     &.is-selected {
-    	a { background: $default-blue; color: $default-white; }
-    	ul { display: block; }
+    	a { 
+    		background: $default-blue; 
+    		color: $default-white; 
+    	}
+    	ul { 
+    		display: block; 
+    	}
 	}
 }
 
+// STYLING OF DROPDOWN NAV
 .dropdown {
     position: relative;
     display: inline-block;

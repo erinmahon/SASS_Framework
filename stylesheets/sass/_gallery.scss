@@ -1,4 +1,4 @@
-$default-tan: #d6d5ba;
+// COLOR PALLETE VARIBALES
 $default-blue: #628792;
 $default-teal: #36a6a9;
 $default-peach: #e3ac94;
@@ -6,23 +6,18 @@ $default-navy: #061d5a;
 $default-white: #ffffff;
 $default-black: #000000;
 
+// FONT VARIABLE
 $font-stack: Helvetica, sans-serif;
 
-@import 'grid';
-
+// STYLE SLIDER IMAGE GALLERY
 .gallery {
 	@include row;
 	.gallery_image {
-		opacity: 0.9;
 		@include col(1,3);
 		img {
 			width: 100%;
 			border: 2px solid $default-black;
 		}
-	 	// h3 {
-	 	// 	font: 200% $font-stack;
-	 	// 	margin-top: 0;
-	 	// }
 	 	p {
 	 		font: 85% $font-stack;
 	 		font-weight: lighter;

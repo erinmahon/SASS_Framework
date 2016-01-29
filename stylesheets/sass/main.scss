@@ -1,3 +1,4 @@
+// COLOR PALLETE VARIBALES
 $default-tan: #d6d5ba;
 $default-blue: #628792;
 $default-teal: #36a6a9;
@@ -6,8 +7,10 @@ $default-navy: #061d5a;
 $default-white: #ffffff;
 $default-black: #000000;
 
+// FONT VARIABLE
 $font-stack: Helvetica, sans-serif;
 
+// IMPORT PARTIAL .SCSS VIEWS
 @import 'button';
 @import 'slider';
 @import 'nav';
@@ -28,17 +31,20 @@ header {
 	z-index: 1;
 }
 
+// STYLE HTML HEADER TAGS
 h3 {
 	font: 200% $font-stack;
 	margin-top: 1%;
 	text-transform: uppercase;
 	text-align: center;
 }
+
 h4 {
 	@extend h3;
 	font: 150% $font-stack;
 	margin-bottom: 1%;
 }
+
 h1 {
 	@extend h3;
 	font-size: 250% $font-stack;
@@ -49,6 +55,7 @@ h1 {
 	padding: 1%;
 }
 
+// DEFINE SECTION STYLING
 #home {
 	position: relative;
 }
@@ -57,6 +64,7 @@ h1 {
 	padding-top: 10%;
 }
 
+// CONTACT SECTION
 #contact {
 	padding-top: 7%;
 	.profile_photo {
@@ -79,6 +87,7 @@ h1 {
 		}
 	}
 }
+
 .form {
 	text-align: center;
 	clear: both;
@@ -94,6 +103,7 @@ h1 {
 	}
 }
 
+// FOOTER STYLING
 footer {
 	clear: both;
 	height: 100px;
